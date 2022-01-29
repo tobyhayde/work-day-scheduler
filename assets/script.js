@@ -12,14 +12,12 @@ $(document).ready(function () {
     })
 
     function timeTracker() {
-        
+        // find current hours
         var timeNow = moment().hour();
-
-        
+        // loop over each time block
         $(".time-block").each(function () {
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-
-            
+            // check time and add or remove each time block from present/move to future/past
             if (blockTime < timeNow) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
@@ -37,7 +35,7 @@ $(document).ready(function () {
             }
         })
     }
-    
+    // pull items from local storage
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
