@@ -17,7 +17,7 @@ $(document).ready(function () {
         // loop over each time block
         $(".time-block").each(function () {
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-            // check time and add or remove each time block from present/move to future/past
+            // check time and add or remove each time block from present/move to future or past
             if (blockTime < timeNow) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
