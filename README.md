@@ -33,8 +33,10 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 
 THEN the saved events persist
+#
+Deployed application
 
-# Deployed application
+
 ![05-third-party-apis-homework-demo](https://user-images.githubusercontent.com/95835120/151684816-99534df6-2a69-4355-aa5d-28ce9cc7460c.gif)
 #
 URL of deployed application: https://tobyhayde.github.io/work-day-scheduler/
